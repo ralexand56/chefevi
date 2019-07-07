@@ -1,0 +1,41 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 31/01/2019 12:31
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 35px;
+font-style: normal;
+
+}
+
+.flaticon-birthday-cake:before { content: "\f100"; }
+.flaticon-vegetables:before { content: "\f101"; }
+.flaticon-star-of-david:before { content: "\f102"; }
+.flaticon-antipasto:before { content: "\f103"; }
+.flaticon-tray:before { content: "\f104"; }
+.flaticon-fried-potatoes:before { content: "\f105"; }
+.flaticon-gluten:before { content: "\f106"; }
+.flaticon-no-food:before { content: "\f107"; }
+.flaticon-juice:before { content: "\f108"; }
