@@ -28,10 +28,16 @@ const FoodCategoryContainer = styled.ul`
 const FoodCategoryView = styled.li`
   display: flex;
   justify-content: space-between;
-  background-color: grey;
+  align-items: center;
+  background-color: #73c699;
   margin: 0.3em;
   padding: 0.5em;
   border-radius: 0.3em;
+`;
+
+const CategoryItemText = styled.a`
+  color: white;
+  padding: 0;
 `;
 
 export default () => {
@@ -91,7 +97,7 @@ export default () => {
           .sort((a, b) => a.sort - b.sort)
           .map(x => (
             <FoodCategoryView key={x.id}>
-              <a className="filter btn">{x.name}</a>
+              <CategoryItemText>{x.name}</CategoryItemText>
               <button
                 className="btn"
                 onClick={() => handleDeleteCategory(x.id)}
